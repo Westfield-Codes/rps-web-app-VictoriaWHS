@@ -7,12 +7,8 @@ function setRounds(rounds){
     if (rounds % 2 === 0) {
         alert("must be odd");
     }
-    else {
-        alert ("Best out of " + rounds);
-        return rounds;
-    }
     localStorage.setItem("rounds",rounds);
-    window.location.replace("chooser.htm")
+    window.location.replace("chooser.html");
 }
 
 
