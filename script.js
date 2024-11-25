@@ -1,3 +1,4 @@
+var round =1;
 function getRounds(){
     let rounds = document.getElementById("rounds").value;
     setRounds(rounds);
@@ -8,9 +9,14 @@ function setRounds(rounds){
         alert("must be odd");
     }
     localStorage.setItem("rounds",rounds);
-    window.location.replace("chooser.html");
+    window.location.href="chooser.html";
 }
 
+function showRound(){
+    let statbox =document.getElementById("statsBox");
+    let message = "blah";
+    statsBox.innerHTML= message;
+}
 
 function cpuTurn(u){
     let moves = ["r","p","s"];
@@ -20,14 +26,19 @@ function cpuTurn(u){
 }
 
 function findWinner(u,c){
-    let winner = " ";
-    let winArray=[["r","p","I"],["r","s","you"],["p","s","I"],["p","r","you"],["s","r","I"],["s","p","you"]];
-        for (let i = 0; i< winArray.length; i++){
-            if (winArray[i][0] == u && winArray[i][1]==c){
+    if ( u==c ){
+        alert("We both choose " + u);
+    }
+    else {
+        let winner = " ";
+        let winArray=[["r","p","I"],["r","s","you"],["p","s","I"],["p","r","you"],["s","r","I"],["s","p","you"]];
+            for (let i = 0; i< winArray.length; i++){
+                if (winArray[i][0] == u && winArray[i][1]==c){
                 winner= winArray[i][2];
 
             }
         }
-    alert("You choose " + u + " and I choose " + c + " " + winner + " win!");
-    return winner;
+        alert("You choose " + u + " and I choose " + c + " " + winner + " win!");
+        return winner;
+    }
 }
