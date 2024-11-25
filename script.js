@@ -1,6 +1,8 @@
 var round =1;
+var rounds =0;
+localStorage.setItem("rounds",rounds);
 function getRounds(){
-    let rounds = document.getElementById("rounds").value;
+    rounds = document.getElementById("rounds").value;
     setRounds(rounds);
 }
 
@@ -13,8 +15,9 @@ function setRounds(rounds){
 }
 
 function showRound(){
+    let rounds = getLocalStorage.getItem("rounds");
     let statbox =document.getElementById("statsBox");
-    let message = "blah";
+    let message = "Round " + round + " of " + rounds;
     statsBox.innerHTML= message;
 }
 
@@ -22,7 +25,7 @@ function cpuTurn(u){
     let moves = ["r","p","s"];
     let choice = Math.floor(Math.random()*3);
     let c = moves[choice];
-    findWinner(u,c);
+    findWinner(u,c,round);
 }
 
 function findWinner(u,c){
@@ -30,6 +33,7 @@ function findWinner(u,c){
         alert("We both choose " + u);
     }
     else {
+        round++;
         let winner = " ";
         let winArray=[["r","p","I"],["r","s","you"],["p","s","I"],["p","r","you"],["s","r","I"],["s","p","you"]];
             for (let i = 0; i< winArray.length; i++){
@@ -39,6 +43,7 @@ function findWinner(u,c){
             }
         }
         alert("You choose " + u + " and I choose " + c + " " + winner + " win!");
+        showRound();
         return winner;
     }
 }
