@@ -17,7 +17,8 @@ function getRounds(){
  */
 function setRounds(rounds){
     if (rounds % 2 == 0) {
-        alert("must be odd");
+        //alert("must be odd");//
+        document.getElementById("rounds").value="must be odd..."
     }
     else {
         localStorage.setItem("rounds",rounds);
@@ -76,7 +77,8 @@ function findWinner(u,c){
 
             }
         }
-        alert("You choose " + u + " and I choose " + c + " " + winner + " win!");
+        //alert("You choose " + u + " and I choose " + c + " " + winner + " win!");
+        document.getElementById("result").innerHTML= "You choose " + u + " and I choose " + c + " " + winner + " win!"
         let round = localStorage.getItem("round");
         round++;
         localStorage.setItem("round",round);
