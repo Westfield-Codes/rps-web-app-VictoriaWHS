@@ -24,6 +24,9 @@ function setRounds(rounds){
         localStorage.setItem("rounds",rounds);
         localStorage.setItem("round",1);
         window.location.href = "chooser.html";
+        let score =[0.0];
+        localStorage.setItem("score",JSON.stringify(score));
+
     }
 }
 
@@ -36,10 +39,13 @@ function setRounds(rounds){
 function showRound(){
     let round = localStorage.getItem("round");
     let rounds = localStorage.getItem("rounds");
+    let score = localStorage.getItem(JSON.parse("score"));
     if (round > rounds) {
         window.location.href = "gameover.html";
     }
     let statsBox = document.getElementById("statsBox");
+    let scoreBox = document.getElementById("scoreBox");
+    scoreBox.innerHTML=score.toString();
     let message = "Round " + round + " of " + rounds;
     statsBox.innerHTML = message;
 }

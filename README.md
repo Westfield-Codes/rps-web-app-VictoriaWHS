@@ -4,13 +4,13 @@
 1.  **doneeee** Set the value of document element with id = rounds to "odd numbers only" if an even number is entered, and do not display this message as an alert.
 1. **done** Create a div in chooser.html with id = result and write "Choose a move" inside it. 
 1. **done** Display the findWinner message inside that div, replacing "Choose a Move" when there is a winner, instead of displaying that message as an alert. 
-1. **Incomplete** Replace that result message with the "We both picked" alert message if u and c are the same, and do not display the alert. 
+1. **Incomplete??? iThinkICompletedIt** Replace that result message with the "We both picked" alert message if u and c are the same, and do not display the alert. 
 1.**done** To the body element, apply the css rule position:relative;
 1. **PERHAPSdone** On chooser.html, create a div with id = scoreBox above statsBox and containing the HTML "Score: loading"
 1. **completed.** Apply these css rules to a #scoreBox selector:  position:absolute; right:10px; top: 10px; border:1px solid black; background:white;padding:10px;
-1. In setRounds, if rounds was odd, create an array called score and set it to [0,0]. 
-1. Next, store the score array to local storage using JSONstringify.
-1. In showRound, get score from local storage, JSON parsed.
+1. **done** In setRounds, if rounds was odd, create an array called score and set it to [0,0]. 
+1. **done, needs review perhaps** Next, store the score array to local storage using JSONstringify.
+1. **done** In showRound, get score from local storage, JSON parsed.
 1. Next, replace "Score: loading" in scoreBox with score.toString()
 1. In findWinner, store the winner in local storage as winner.
 1. After you set the round, get the score array from local storage, JSON parsed. 
