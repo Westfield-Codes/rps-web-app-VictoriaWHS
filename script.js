@@ -72,6 +72,7 @@ function cpuTurn(u){
  * @return = none
  */
 function findWinner(u,c){
+ 
     if (u == c){
 //        alert("We both picked " + u);//
     document.getElementById("result").innerHTML="We both picked " + u;
