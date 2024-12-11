@@ -1,5 +1,4 @@
 ### To Do
-
 1.**done** Preview this MarkDown file with Control+Shift+V
 1.**done** Set the value of document element with id = rounds to "odd numbers only" if an even number is entered, and do not display this message as an alert.
 1.**done** Create a div in chooser.html with id = result and write "Choose a move" inside it. 
@@ -12,7 +11,7 @@
 1.**done** Next, store the score array to local storage using JSONstringify.
 1.**done** In showRound, get score from local storage, JSON parsed.
 1.**done,line44** Next, replace "Score: loading" in scoreBox with score.toString()
-1.**Skipped?** In findWinner, store the winner in local storage as winner.
+1.**DoneButNeedForReview(line 91 or so)** In findWinner, store the winner in local storage as winner.
 1. After you set the round, get the score array from local storage, JSON parsed. 
 1. Next, create a players array with the two players, "You" first. 
 1. Next, set win equal to the index of the winner in players.
@@ -31,3 +30,4 @@
 1. Go over all the code.  If you see any repeated lines, make new a function for those if possible.  
 1. If one player earns more than half the rounds, end the game.
 1. When you are sure it works, pull request this branch to main, then merge it.  Then you can style to match your wireframes. Í
+store winner of each round in showRound() and use it to find the total winner for the entire game
