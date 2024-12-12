@@ -2,7 +2,7 @@
 
 1. **done** Preview this MarkDown file with Control+Shift+V
 1. **done** index.html: Set the value of document element with id = rounds to "odd numbers only" if an even number is entered. Do not display this message as an alert.
-1. setRounds(): replace if (rounds % 2 == 0) with if (rounds % 2 == 0 || isNaN(rounds)) so that people can't click past that error (isNan = "is not a number")
+1. **done** setRounds(): replace if (rounds % 2 == 0) with if (rounds % 2 == 0 || isNaN(rounds)) so that people can't click past that error (isNan = "is not a number")
 1. **done**chooser.html: Create a div in chooser.html with id = result and write "Choose a move" inside it. 
 1. **done**findWinner(): Display the findWinner message inside that result div, replacing "Choose a Move" when there is a winner. Do not display that message as an alert. 
 1. **done** findWinner(): Replace that result message with the "We both picked" alert message if u and c are the same. Do not display that message as an alert. 
@@ -14,7 +14,7 @@
 1. **done** showRound(): get score from local storage, JSON.parsed.
 1. **done** showRound(): replace "Score: loading" in scoreBox with score.toString()
 1. **done**findWinner(): store the winner in local storage as winner.
-1. findWinner(): After you added 1 to the round, get the score array from local storage, JSON.parsed. 
+1. **done**findWinner(): After you added 1 to the round, get the score array from local storage, JSON.parsed. 
 1. findWinner(): create a players array with the two players, "You" first. This should match the values in winArray. 
 1. findWinner(): set win equal to the index of the winner in players[]. So if winner is "I", it is players[1] so win = 1. 
 1. findWinner(): increase by one the value of the element in the score array with index win

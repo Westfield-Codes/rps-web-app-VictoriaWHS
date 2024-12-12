@@ -5,19 +5,21 @@ function getRounds(){
 }
 
 function setRounds(rounds){
-    if (rounds % 2 == 0) {
-        //alert("must be odd");//
-        document.getElementById("rounds").value="must be odd..."
+    if (rounds % 2 == 0){
+        document.getElementById("rounds").value="must be odd...";
     }
+    else if(isNaN(rounds)){
+        //The line bellow still isnt quite working.  To be fixed//
+        document.getElementById("rounds").value="That is not a number...";
+        //isNaN(rounds)  theres an issue with this for some reason.
+    }
+ 
     else {
         localStorage.setItem("rounds",rounds);
         localStorage.setItem("round",1);
         window.location.href = "chooser.html";
         let score =[0,0];
         localStorage.setItem("score",JSON.stringify(score));
-        //Delete console log later
-        console.log("stringified" + JSONstringify(score))
-
     }
 }
 
