@@ -13,12 +13,12 @@
 1. **done** setRounds(): store the score array to local storage using JSON.stringify(score).
 1. **done** showRound(): get score from local storage, JSON.parsed.
 1. **done** showRound(): replace "Score: loading" in scoreBox with score.toString()
-1. **done**findWinner(): store the winner in local storage as winner.
-1. **done**findWinner(): After you added 1 to the round, get the score array from local storage, JSON.parsed. 
-1. findWinner(): create a players array with the two players, "You" first. This should match the values in winArray. 
-1. findWinner(): set win equal to the index of the winner in players[]. So if winner is "I", it is players[1] so win = 1. 
-1. findWinner(): increase by one the value of the element in the score array with index win
-1. findWinner(): display the updated score in the scoreBox div with "Score : " + score.toString;
+1. **done** findWinner(): store the winner in local storage as winner.
+1. **done** findWinner(): After you added 1 to the round, get the score array from local storage, JSON.parsed. 
+1. **done** findWinner(): create a players array with the two players, "You" first. This should match the values in winArray. 
+1. **done** findWinner(): set win equal to the index of the winner in players[]. So if winner is "I", it is players[1] so win = 1. 
+1. **done** findWinner(): increase by one the value of the element in the score array with index win
+1. **NOT WORKING?** findWinner(): display the updated score in the scoreBox div with "Score : " + score.toString;
 1. findWinner(): store the score array, stringified, in local storage.
 1. gameover.html: add the scorebox div above the play again button
 1. gameover.html: Give scoreBox div the class "over" 

@@ -33,7 +33,6 @@ function showRound(){
         window.location.href = "gameover.html";
     }
     let statsBox = document.getElementById("statsBox");
-  
     let message = "Round " + round + " of " + rounds;
     statsBox.innerHTML = message;
 }
@@ -46,7 +45,6 @@ function cpuTurn(u){
 }
 
 function findWinner(u,c){
- 
     if (u == c){
 //      after you set the round, get the score array from local storage, JSON parsed. 
     document.getElementById("result").innerHTML="We both picked " + u;
@@ -60,12 +58,19 @@ function findWinner(u,c){
 
             }
         }
-
+//swin equal to the index of the winner in players[]. So if winner is "I", it is players[1] so win = 1. 
+        let players=["you","I"]
+         let win= players.indexOf(winner);
+         let score =JSON.parse(localStorage.getItem("score"));
+         score[win]++;
         document.getElementById("result").innerHTML= "You choose " + u + " and I choose " + c + " " + winner + " win!"
+        document.getElementById("scoreBox").innerHTML= "Score: "+score.toString();
         let round = localStorage.getItem("round");
         round++;
+
         localStorage.setItem("round",round);
-        let score =JSON.parse(localStorage.getItem("score"));
+
+
         showRound();
     }
 }
