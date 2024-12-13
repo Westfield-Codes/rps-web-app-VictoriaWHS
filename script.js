@@ -64,10 +64,10 @@ function findWinner(u,c){
          let score =JSON.parse(localStorage.getItem("score"));
          score[win]++;
         document.getElementById("result").innerHTML= "You choose " + u + " and I choose " + c + " " + winner + " win!"
-        document.getElementById("scoreBox").innerHTML= "Score: "+score.toString();
+        document.getElementById("scoreBox").innerHTML= "Score: "+ score.toString();
         let round = localStorage.getItem("round");
         round++;
-
+        localStorage.setItem("score",JSON.stringify(score));
         localStorage.setItem("round",round);
 
 

@@ -18,12 +18,12 @@
 1. **done** findWinner(): create a players array with the two players, "You" first. This should match the values in winArray. 
 1. **done** findWinner(): set win equal to the index of the winner in players[]. So if winner is "I", it is players[1] so win = 1. 
 1. **done** findWinner(): increase by one the value of the element in the score array with index win
-1. **NOT WORKING?** findWinner(): display the updated score in the scoreBox div with "Score : " + score.toString;
-1. findWinner(): store the score array, stringified, in local storage.
-1. gameover.html: add the scorebox div above the play again button
-1. gameover.html: Give scoreBox div the class "over" 
-1. style.css Style class over (.over) with font-size:24pt, margin:auto, position:static!important, width:10em, text-align:center.
-1. gameover.html: load a new function called endGame() when the <body> loads (like you did in chooser.html)
+1. **Done** findWinner(): display the updated score in the scoreBox div with "Score : " + score.toString;
+1. **Done** findWinner(): store the score array, stringified, in local storage.
+1. **Done** gameover.html: add the scorebox div above the play again button
+1. **Done** gameover.html: Give scoreBox div the class "over" 
+1. **done** style.css Style class over (.over) with font-size:24pt, margin:auto, position:static!important, width:10em, text-align:center.
+1. **working** gameover.html: load a new function called endGame() when the <body> loads (like you did in chooser.html)
 1. script.js: create a new function called endGame(){}
 1. endgame(): Get the score array from local storage, JSON.parsed
 1. endgame(): Decide who won based on the scores, and set winner equal to this value ("You" or "I")
