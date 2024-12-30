@@ -74,3 +74,7 @@ function findWinner(u,c){
         showRound();
     }
 }
+
+function endGame(){
+    
+}

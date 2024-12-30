@@ -23,8 +23,8 @@
 1. **Done** gameover.html: add the scorebox div above the play again button
 1. **Done** gameover.html: Give scoreBox div the class "over" 
 1. **done** style.css Style class over (.over) with font-size:24pt, margin:auto, position:static!important, width:10em, text-align:center.
-1. **working** gameover.html: load a new function called endGame() when the <body> loads (like you did in chooser.html)
-1. script.js: create a new function called endGame(){}
+1. **done** gameover.html: load a new function called endGame() when the <body> loads (like you did in chooser.html)
+1. **done** script.js: create a new function called endGame(){}
 1. endgame(): Get the score array from local storage, JSON.parsed
 1. endgame(): Decide who won based on the scores, and set winner equal to this value ("You" or "I")
 1. endgame(): Create a variable called message, and begin it winner + " won,"
